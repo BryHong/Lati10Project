@@ -14,6 +14,18 @@ document.querySelectorAll('.fade-in, .fade-in-left').forEach(el => {
     observer.observe(el);
 });
 
+// Navbar for Mobile
+document.querySelector('.navbar-toggle').addEventListener('click', function() {
+    document.querySelector('.nav-links').classList.toggle('show');
+});
+
+// Close Navbar menu when a link is clicked
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        document.querySelector('.nav-links').classList.remove('show');
+    });
+});
+
 // Smooth scrolling for internal links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
