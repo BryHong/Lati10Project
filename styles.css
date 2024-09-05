@@ -85,32 +85,30 @@ img {
 
 /*adjacent images*/
 .adjacent-images {
-    flex: 1;
     display: flex;
     flex-direction: row;
     gap: 20px;
+    margin-bottom: 20px;
   }
   
   .adjacent-image {
-    width: 100%;
-    height: calc(50% - 10px); /* Subtracting half of the gap */
+    width: calc(50% - 10px);
+    height: 350px;
     object-fit: cover;
     object-position: center top;
     border-radius: 1%;
-    height: 350px;
-
   }
-
-@media (max-width: 768px) {
-  .adjacent-images {
-    flex-direction: row;
+  
+  @media (max-width: 768px) {
+    .adjacent-images {
+      flex-direction: column;
+    }
+  
+    .adjacent-image {
+      width: 100%;
+      height: 200px;
+    }
   }
-
-  .adjacent-image {
-    height: 200px;
-    width: 100%;
-  }
-}
 
 /*image slide show*/
 .slider-container {
