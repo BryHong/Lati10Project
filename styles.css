@@ -190,6 +190,7 @@ blockquote {
 
 /* Citations */
   #citations {
+    max-width: 900px;
     margin: 2em 0;
     padding: 1em;
     background-color: #f8f8f8;
@@ -204,6 +205,9 @@ blockquote {
     margin-bottom: 1em;
     padding-left: 2em;
     text-indent: -2em;
+    max-width: 900px;
+
+    
   }
 
 /* Navbar styles */
