@@ -87,7 +87,7 @@ img {
 .adjacent-images {
     flex: 1;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 20px;
   }
   
@@ -97,20 +97,13 @@ img {
     object-fit: cover;
     object-position: center top;
     border-radius: 1%;
-  }
-  .adjacent-images {
-    flex-direction: row;
-  }
-
-  .adjacent-image {
     height: 350px;
-    width: calc(50% - 10px); /* Subtracting half of the gap */
-  }
 
+  }
 
 @media (max-width: 768px) {
   .adjacent-images {
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .adjacent-image {
