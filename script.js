@@ -7,10 +7,10 @@ const observer = new IntersectionObserver((entries) => {
             entry.target.classList.remove('visible');
         }
     });
-}, { threshold: 0.1 });
+}, { threshold: 0.01 });
 
 // Select all elements with the 'fade-in' or 'fade-in-left' class and observe them
-document.querySelectorAll('.fade-in, .fade-in-left').forEach(el => {
+document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-bottom').forEach(el => {
     observer.observe(el);
 });
 
